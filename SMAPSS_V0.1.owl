@@ -1,0 +1,1312 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/singh/ontologies/2021/10/SMAPSS"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/singh/ontologies/2021/10/SMAPSS">
+    <Prefix name="" IRI="http://www.semanticweb.org/singh/ontologies/2021/10/SMAPSS"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrl2" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">An ontology for a cyber physical system which consists of Organization, Machines, the deviation of the machine and their relationships with each other to optimise the synchronization of the simulation model of an automated production system in case of changes in the real automation production system.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Simulation model and automated production system synchronization</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Actuator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Air_Pump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Battery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Control_and_Planning_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conveyor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deviation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deviation_Reason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electric_Expert_Shop_Floor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electric_Expert_Simulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electric_Failure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Final_Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gripper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Handling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Handling_System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human_Machine_Interface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human_Resources_Department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hydraulic_failure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intermediate_Goods"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linear_Regression_Equation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Machine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManPower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manufacturing_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material_Handling_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material_Supply"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mechanical_Failure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mileu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network_Expert_Shop_Floor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network_Expert_Simulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonLinear_Regression_Equation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Order"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person_Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Production"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionLine_System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Production_Department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QA_Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Raw_Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor_Failure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shop_Floor_Expert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SimulationModel_System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Simulation_Expert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storage_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Techinical_Department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_and_Inspection_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit_Load_Formation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnknownDeviation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technical/Industrial_Design"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#departmentIs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#doesNotHaveKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#expertOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#expertOfProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#givesKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDepartment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDeviation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDeviationReason"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExpert"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcessed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAPartOfProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAPartOfProjectAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAProjectAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAnEmployee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOfType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRecommendedFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSolvedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#knowledgeAbout"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#knowledgeAboutProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occuredIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#processOfProductionModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#processOfSimulationModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#productionModelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#simulationModelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#successorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesEquation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#appliedOnSimulation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasComment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDeviationFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDeviationType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDeviationUntil"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEquation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasIntercept"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSlope"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#processType"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrl2:isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Actuator"/>
+        <Class IRI="#Handling_System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Air_Pump"/>
+        <Class IRI="#Drive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Battery"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Container"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Control_and_Planning_Process"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conveyor"/>
+        <Class IRI="#Handling_System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drive"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electric_Expert_Shop_Floor"/>
+        <Class IRI="#Shop_Floor_Expert"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electric_Expert_Simulation"/>
+        <Class IRI="#Simulation_Expert"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electric_Failure"/>
+        <Class IRI="#Machine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Final_Product"/>
+        <Class IRI="#Product_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gripper"/>
+        <Class IRI="#Handling_System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Handling"/>
+        <Class IRI="#Material_Handling_Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Handling_System"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_Machine_Interface"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_Resources_Department"/>
+        <Class IRI="#Department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hydraulic_failure"/>
+        <Class IRI="#Machine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intermediate_Goods"/>
+        <Class IRI="#Product_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linear_Regression_Equation"/>
+        <Class IRI="#Knowledge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine"/>
+        <Class IRI="#Deviation_Reason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance"/>
+        <Class IRI="#Production_Department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManPower"/>
+        <Class IRI="#Deviation_Reason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manufacturing_Process"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material"/>
+        <Class IRI="#Deviation_Reason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material_Handling_Process"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material_Supply"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mechanical_Failure"/>
+        <Class IRI="#Machine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Method"/>
+        <Class IRI="#Deviation_Reason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mileu"/>
+        <Class IRI="#Deviation_Reason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motor"/>
+        <Class IRI="#Drive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network"/>
+        <Class IRI="#Mileu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network_Expert_Shop_Floor"/>
+        <Class IRI="#Shop_Floor_Expert"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network_Expert_Simulation"/>
+        <Class IRI="#Simulation_Expert"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonLinear_Regression_Equation"/>
+        <Class IRI="#Knowledge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operator"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Part"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Production"/>
+        <Class IRI="#Production_Department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionLine_System"/>
+        <Class IRI="#System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Production_Department"/>
+        <Class IRI="#Department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QA_Manager"/>
+        <Class IRI="#Production_Department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Raw_Material"/>
+        <Class IRI="#Product_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robot"/>
+        <Class IRI="#Handling_System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor_Failure"/>
+        <Class IRI="#Machine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shop_Floor_Expert"/>
+        <Class IRI="#Person_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimulationModel_System"/>
+        <Class IRI="#System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simulation_Expert"/>
+        <Class IRI="#Person_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speed"/>
+        <Class IRI="#Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Storage_Process"/>
+        <Class IRI="#Material_Handling_Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Techinical_Department"/>
+        <Class IRI="#Department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temperature"/>
+        <Class IRI="#Mileu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test_and_Inspection_Process"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time"/>
+        <Class IRI="#Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transport"/>
+        <Class IRI="#Material_Handling_Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit_Load_Formation"/>
+        <Class IRI="#Material_Handling_Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnknownDeviation"/>
+        <Class IRI="#Deviation_Reason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkStation"/>
+        <Class IRI="#Handling_System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technical/Industrial_Design"/>
+        <Class IRI="#Production_Department"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Air_Pump"/>
+        <Class IRI="#Motor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Container"/>
+        <Class IRI="#Drive"/>
+        <Class IRI="#Handling_System"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#departmentIs"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#doesNotHaveKnowledge"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#expertOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#expertOfProcess"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#givesKnowledge"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDepartment"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDeviation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDeviationReason"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasExpert"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParameter"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProcessed"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProduct"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAPartOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAPartOfProject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAPartOfProjectAt"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAProjectAt"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAnEmployee"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLocated"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOfType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSolvedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#knowledgeAbout"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#knowledgeAboutProcess"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#occuredIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#processOfProductionModel"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#processOfSimulationModel"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#expertOfProcess"/>
+        <ObjectProperty IRI="#hasExpert"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasDeviation"/>
+        <ObjectProperty IRI="#occuredIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasProcess"/>
+        <ObjectProperty IRI="#isAPartOfProjectAt"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#productionModelOf"/>
+        <ObjectProperty IRI="#simulationModelOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#departmentIs"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#doesNotHaveKnowledge"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#expertOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#expertOfProcess"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#givesKnowledge"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDepartment"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDeviation"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDeviationReason"/>
+        <Class IRI="#Deviation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasKnowledge"/>
+        <Class IRI="#Deviation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParameter"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProcessed"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProduct"/>
+        <Class IRI="#Order"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAPartOf"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAPartOfProject"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAPartOfProjectAt"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAProjectAt"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAnEmployee"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLocated"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOfType"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRecommendedFor"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSolvedBy"/>
+        <Class IRI="#Deviation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#knowledgeAbout"/>
+        <Class IRI="#Knowledge"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#knowledgeAboutProcess"/>
+        <Class IRI="#Knowledge"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#processOfProductionModel"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#processOfSimulationModel"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#simulationModelOf"/>
+        <Class IRI="#SimulationModel_System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#successorOf"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesEquation"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#departmentIs"/>
+        <Class IRI="#Department"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#doesNotHaveKnowledge"/>
+        <Class IRI="#Deviation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#expertOf"/>
+        <Class IRI="#Deviation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#expertOfProcess"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#givesKnowledge"/>
+        <Class IRI="#Knowledge"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDepartment"/>
+        <Class IRI="#Department"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDeviation"/>
+        <Class IRI="#Deviation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDeviationReason"/>
+        <Class IRI="#Deviation_Reason"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasKnowledge"/>
+        <Class IRI="#Knowledge"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParameter"/>
+        <Class IRI="#Parameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProcessed"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProduct"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAPartOf"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAPartOfProject"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAPartOfProjectAt"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAProjectAt"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAnEmployee"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLocated"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOfType"/>
+        <Class IRI="#Person_Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRecommendedFor"/>
+        <Class IRI="#Deviation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSolvedBy"/>
+        <Class IRI="#Deviation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSolvedBy"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#knowledgeAboutProcess"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#processOfProductionModel"/>
+        <Class IRI="#ProductionLine_System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#processOfSimulationModel"/>
+        <Class IRI="#SimulationModel_System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#simulationModelOf"/>
+        <Class IRI="#ProductionLine_System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#successorOf"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesEquation"/>
+        <Class IRI="#Knowledge"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDeviationFrom"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDeviationType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasEquation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasIntercept"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSlope"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#processType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#appliedOnSimulation"/>
+        <Class IRI="#Deviation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDeviationFrom"/>
+        <Class IRI="#Deviation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDeviationType"/>
+        <Class IRI="#Deviation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDeviationUntil"/>
+        <Class IRI="#Deviation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEquation"/>
+        <Class IRI="#Process"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasIntercept"/>
+        <Class IRI="#Linear_Regression_Equation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSlope"/>
+        <Class IRI="#Linear_Regression_Equation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#processType"/>
+        <Class IRI="#Process"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#appliedOnSimulation"/>
+        <DataOneOf>
+            <Literal>No</Literal>
+            <Literal>Yes</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDeviationType"/>
+        <DataOneOf>
+            <Literal>Planned</Literal>
+            <Literal>Unplanned</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#processType"/>
+        <DataOneOf>
+            <Literal>ProductionModel</Literal>
+            <Literal>SimulationModel</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Air_Pump</IRI>
+        <Literal xml:lang="en">Air Pump</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Control_and_Planning_Process</IRI>
+        <Literal xml:lang="en">Control and Planning Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Department</IRI>
+        <Literal>Devision of a large organization with a specific area of activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Deviation_Reason</IRI>
+        <Literal>The reasons that initiates the changes in the production line/manufacturing process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Deviation_Reason</IRI>
+        <Literal xml:lang="en">Deviation Reason</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Device</IRI>
+        <Literal>The physical devices which is a part of the production system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Device</IRI>
+        <Literal>https://www.researchgate.net/publication/311610072_Manufacturing_Ontology_Development_Based_on_Industry_40_Demonstration_Production_Line</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Electric_Expert_Shop_Floor</IRI>
+        <Literal xml:lang="en">Electric Expert Shopfloor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Electric_Expert_Simulation</IRI>
+        <Literal xml:lang="en">Electric Expert Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Final_Product</IRI>
+        <Literal xml:lang="en">Final Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Handling_System</IRI>
+        <Literal xml:lang="en">Handling System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Human_Machine_Interface</IRI>
+        <Literal xml:lang="en">Human Machine Interface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Human_Resources_Department</IRI>
+        <Literal xml:lang="en">Human Resource Department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Intermediate_Goods</IRI>
+        <Literal xml:lang="en">Intermediate Goods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Linear_Regression_Equation</IRI>
+        <Literal xml:lang="en">Linear Regression Equation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Location</IRI>
+        <Literal>Location of the person, organization, production line</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ManPower</IRI>
+        <Literal>The production line change that occured due to changes in the manpower</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Manufacturing_Process</IRI>
+        <Literal xml:lang="en">Manufacturing Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Material</IRI>
+        <Literal>The production line change that occured due to changes in the material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Material_Handling_Process</IRI>
+        <Literal xml:lang="en">Material Handling Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Method</IRI>
+        <Literal>The production line change that occured due to changes in the method.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mileu</IRI>
+        <Literal>The production line change that occured due to changes in the environment of where the production line is present.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Network_Expert_Shop_Floor</IRI>
+        <Literal xml:lang="en">Network Expert Shopfloor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Network_Expert_Simulation</IRI>
+        <Literal xml:lang="en">Network Expert Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NonLinear_Regression_Equation</IRI>
+        <Literal xml:lang="en">Nonlinear Regression Equation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Order</IRI>
+        <Literal>The order which is placed by the customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Organization</IRI>
+        <Literal>The organization is a group of people with some purpose which is legally set-up.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Parameter</IRI>
+        <Literal>The parametersof the simulation model, production line which can change the performance of the simulation model or a production line.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal>Person with a well defined purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Person_Role</IRI>
+        <Literal xml:lang="en">Person Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Process</IRI>
+        <Literal>DOI:10.1016/j.procir.2018.03.021</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Process</IRI>
+        <Literal>It is the series of action which takes place to achieve a defined particular goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Process</IRI>
+        <Literal>https://www.researchgate.net/publication/311610072_Manufacturing_Ontology_Development_Based_on_Industry_40_Demonstration_Production_Line</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Product</IRI>
+        <Literal>The product is the article which is maufactured</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Product</IRI>
+        <Literal>https://www.researchgate.net/publication/311610072_Manufacturing_Ontology_Development_Based_on_Industry_40_Demonstration_Production_Line</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Product_Type</IRI>
+        <Literal>https://www.researchgate.net/publication/311610072_Manufacturing_Ontology_Development_Based_on_Industry_40_Demonstration_Production_Line</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Product_Type</IRI>
+        <Literal xml:lang="en">Product Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ProductionLine_System</IRI>
+        <Literal xml:lang="en">Productionline System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Production_Department</IRI>
+        <Literal xml:lang="en">Production Department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Project</IRI>
+        <Literal>The project of an organization which is set-up to work on a particular task.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Raw_Material</IRI>
+        <Literal xml:lang="en">Raw Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Shop_Floor_Expert</IRI>
+        <Literal xml:lang="en">Shop Floor Expert</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SimulationModel_System</IRI>
+        <Literal xml:lang="en">Simulation Model System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Simulation_Expert</IRI>
+        <Literal xml:lang="en">Simulation Expert</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Storage_Process</IRI>
+        <Literal xml:lang="en">Storage Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Techinical_Department</IRI>
+        <Literal xml:lang="en">Technical Department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Test_and_Inspection_Process</IRI>
+        <Literal xml:lang="en">Test and Inspection Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit_Load_Formation</IRI>
+        <Literal xml:lang="en">Unit Load Formation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UnknownDeviation</IRI>
+        <Literal xml:lang="en">Unknown Deviation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#appliedOnSimulation</IRI>
+        <Literal>When a simulation expert provides information about a deviation on a simulation model then this dataProperty will change from &quot;No&quot; to &quot;Yes&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#departmentIs</IRI>
+        <Literal>To specify the department of an expert.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#doesNotHaveKnowledge</IRI>
+        <Literal>When an expert doesn&apos;t have the knowledge about the deviation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#expertOf</IRI>
+        <Literal>When a person solves a deviation, they are linked to that deviation via expertOf objectProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#expertOfProcess</IRI>
+        <Literal>When a person is initally assigned as an expert of a process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#givesKnowledge</IRI>
+        <Literal>Person or an expert provides knowledge about the deviation.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
